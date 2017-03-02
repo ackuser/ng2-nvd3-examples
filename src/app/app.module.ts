@@ -5,6 +5,8 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { MyNewComponentComponent } from './my-new-component/my-new-component.component';
+import { AppRoutingModule }        from './app-routing/app-routing.module';
+
 
 import "d3";
 import "nvd3";
@@ -19,7 +21,8 @@ import { nvD3 } from "ng2-nvd3";
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
   exports: [
       nvD3
